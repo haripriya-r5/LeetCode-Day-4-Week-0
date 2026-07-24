@@ -1,4 +1,7 @@
+## functions
+
 def palindrome(num):
+    # the purpose of this function is to check whether num is a palindrome or not
     list = []
     new_list = []
     iteration = 0
@@ -7,16 +10,16 @@ def palindrome(num):
         new_list.insert(-1-iteration, num%10)
         num = num // 10
         iteration += 1
-
+    # outputs
     print(list)
     print(new_list)
-
+    # check statement
     if new_list == list:
         return True
     else:
         return False
 
+## main body
+
 user_num = int(input("Please an integer."))
 print(palindrome(user_num))
-
-# wrong and unfinished
